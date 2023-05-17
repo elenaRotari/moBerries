@@ -17,7 +17,6 @@ import AddUser from "../adduser/AddUser";
 function Table() {
   const [state, dispatch] = useContext(ExampleContext);
   const [show, setShow] = useState(false);
-  const [selectedStatus, setSelectedStatus] = useState("");
 
   const data: any = useLoaderData();
 
