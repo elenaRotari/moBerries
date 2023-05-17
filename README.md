@@ -23,3 +23,13 @@ This is a small project that includes different features & functionalities.
 - clone repository - `git@github.com:elenaRotari/moBerries.git`
 - `npm install || npm i `
 - `npm run dev` (run our project)
+
+## As User:
+
+- User can edit or remove any client.
+- User can add a new client.
+- User can search for a client by email.
+- User can order the list by name in alphabetical order.
+- User can filter the list of clients by status.
+
+### The application can be used both on desktop and mobile
