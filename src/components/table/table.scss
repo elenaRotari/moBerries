@@ -1,0 +1,58 @@
+.tableContainer {
+  .topContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+
+    .addPerson,
+    .sortByName {
+      font-size: 2rem;
+      color: blue;
+      border: none;
+      position: relative;
+    }
+
+    .searchBar {
+      font-size: 1.2rem;
+      padding: 1rem;
+      border: none;
+      outline: none;
+      border-bottom: 2px solid grey;
+    }
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+
+  .table {
+    width: 50%;
+    border-collapse: collapse;
+    border: 1px solid grey;
+
+    caption {
+      font-size: 2rem;
+      font-weight: 900;
+      color: #333;
+      padding: 2rem;
+    }
+    .labels {
+      font-size: 1.1rem;
+      color: blue;
+    }
+    .details {
+      text-align: center;
+      .edit {
+        position: relative;
+      }
+      tr,
+      td {
+        border: 1px solid grey;
+        max-width: 20%;
+        // padding: 1rem;
+      }
+    }
+  }
+}

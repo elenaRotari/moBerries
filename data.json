@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Sara Begonni",
+      "birthday": "1979-09-20",
+      "email": "sara.begonni@icloud.com",
+      "status": "BLOCKED"
+    },
+    {
+      "id": 2,
+      "name": "Ferdi Müller",
+      "birthday": "1995-09-03",
+      "email": "ferdi.mueller@icloud.com",
+      "status": "PENDING"
+    },
+    {
+      "id": 3,
+      "name": "Leon Mustermann",
+      "birthday": "2005-05-09",
+      "email": "leon.mustermann@icloud.com",
+      "status": "ACTIVE"
+    }
+  ]
+}
