@@ -3,21 +3,22 @@
     display: flex;
     width: 100%;
     justify-content: space-evenly;
+    gap: 1rem;
 
     .addPerson,
     .sortByName {
-      font-size: 2rem;
-      color: blue;
+      font-size: calc($size * 1.7);
+      color: $secondary;
       border: none;
       position: relative;
     }
 
     .searchBar {
-      font-size: 1.2rem;
-      padding: 1rem;
+      font-size: calc($size * 1.2);
+      padding: $size;
       border: none;
       outline: none;
-      border-bottom: 2px solid grey;
+      border-bottom: calc($size * 0.125) solid $text;
     }
   }
   display: flex;
@@ -30,25 +31,26 @@
   .table {
     width: 50%;
     border-collapse: collapse;
-    border: 1px solid grey;
+    border: 1px solid $text;
 
     caption {
-      font-size: 2rem;
+      font-size: calc($size * 2);
       font-weight: 900;
       color: #333;
-      padding: 2rem;
+      padding: calc($size * 2);
+      text-decoration: underline;
     }
     .labels {
-      font-size: 1.1rem;
-      color: blue;
+      font-size: calc($size * 1.1);
+      color: $secondary;
       text-align: center;
       tr {
         select {
-          padding: 0.5rem;
+          padding: calc($size * 0.5);
           outline: none;
           border: none;
-          font-size: 1.1rem;
-          color: blue;
+          font-size: calc($size * 1.1);
+          color: $secondary;
           font-weight: 900;
         }
       }
@@ -60,8 +62,8 @@
       }
       tr,
       td {
-        border: 1px solid grey;
-        padding: 1rem;
+        border: calc($size * 0.1) solid $text;
+        padding: $size;
       }
     }
   }
