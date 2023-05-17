@@ -1,9 +1,19 @@
 .tableContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  @media (max-width: 700px) {
+    padding: $size;
+  }
   .topContainer {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
-    gap: 1rem;
+    @media (max-width: 700px) {
+      justify-content: space-between;
+    }
 
     .addPerson,
     .sortByName {
@@ -14,6 +24,9 @@
       border-bottom: 2px solid $text;
       &:hover {
         cursor: pointer;
+      }
+      @media (max-width: 700px) {
+        font-size: $size;
       }
     }
     .addPerson {
@@ -30,31 +43,36 @@
       border: none;
       outline: none;
       border-bottom: calc($size * 0.125) solid $text;
+      @media (max-width: 700px) {
+        font-size: 0.7rem;
+      }
     }
   }
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  width: 100%;
 
   .table {
     width: 50%;
     border-collapse: collapse;
     border: 1px solid $text;
-
+    @media (max-width: 700px) {
+      width: 90%;
+    }
     caption {
       font-size: calc($size * 2);
       font-weight: 900;
       color: #333;
       padding: calc($size * 2);
       text-decoration: underline;
+      @media (max-width: 700px) {
+        font-size: $size;
+      }
     }
     .labels {
       font-size: calc($size * 1.1);
       color: $secondary;
       text-align: center;
+      @media (max-width: 700px) {
+        font-size: 0.7rem;
+      }
       tr {
         select {
           padding: calc($size * 0.5);
@@ -63,6 +81,9 @@
           font-size: calc($size * 1.1);
           color: $secondary;
           font-weight: 900;
+          @media (max-width: 700px) {
+            font-size: 0.7rem;
+          }
         }
       }
     }
@@ -75,6 +96,10 @@
       td {
         border: calc($size * 0.1) solid $text;
         padding: $size;
+        @media (max-width: 700px) {
+          padding: 0;
+          font-size: 0.6rem;
+        }
         button {
           &:hover {
             cursor: pointer;
