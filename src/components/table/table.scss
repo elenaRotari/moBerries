@@ -11,6 +11,17 @@
       color: $secondary;
       border: none;
       position: relative;
+      border-bottom: 2px solid $text;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .addPerson {
+      padding: 0.5rem;
+      border-right: 2px solid $text;
+    }
+    .sortByName {
+      padding: 0.5rem;
     }
 
     .searchBar {
@@ -64,6 +75,11 @@
       td {
         border: calc($size * 0.1) solid $text;
         padding: $size;
+        button {
+          &:hover {
+            cursor: pointer;
+          }
+        }
       }
     }
   }
