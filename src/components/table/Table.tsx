@@ -20,7 +20,7 @@ function Table() {
   const [selectedStatus, setSelectedStatus] = useState("");
 
   const data: any = useLoaderData();
-  console.log(state.users);
+
   useEffect(() => {
     dispatch({
       type: ACTION.LOAD,

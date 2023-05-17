@@ -67,8 +67,6 @@ export const reducer = (state: typeof initState, action: ReducerAction) => {
         ],
       };
     case ACTION.SORT_BY_NAME:
-      console.log(action.payload.sort(sortBy("name")));
-
       return {
         ...state,
         users: action.payload.sort(sortBy("name")),

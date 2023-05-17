@@ -45,7 +45,7 @@ const AddUser = ({ setShow, INITIAL, type }: Props) => {
           name="name"
           value={formdata.name}
           onChange={handleChange}
-          placeholder="fullName"
+          placeholder="First/Last-Name"
         />
         <input
           type="date"

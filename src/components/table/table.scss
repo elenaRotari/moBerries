@@ -41,6 +41,17 @@
     .labels {
       font-size: 1.1rem;
       color: blue;
+      text-align: center;
+      tr {
+        select {
+          padding: 0.5rem;
+          outline: none;
+          border: none;
+          font-size: 1.1rem;
+          color: blue;
+          font-weight: 900;
+        }
+      }
     }
     .details {
       text-align: center;
@@ -50,8 +61,7 @@
       tr,
       td {
         border: 1px solid grey;
-        max-width: 20%;
-        // padding: 1rem;
+        padding: 1rem;
       }
     }
   }
