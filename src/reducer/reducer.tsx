@@ -35,7 +35,7 @@ export const reducer = (state: typeof initState, action: ReducerAction) => {
       return {
         ...state,
         copy: state.users.filter((el: users) =>
-          el.email.includes(action.payload)
+          el.email.toLowerCase().includes(action.payload.toLowerCase())
         ),
       };
     case ACTION.DELETE:
